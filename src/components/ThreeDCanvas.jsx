@@ -8,11 +8,11 @@ function ThreeDCanvas() {
     <Canvas style={{ width: 400, height: 400 }}>
       <ambientLight />
       <pointLight position={[1, 0, 1]} intensity={1} color="#fff" distance={100} />
-      {/* 
+
       <mesh position={[0, 1.5, 0]}>
         <coneGeometry />
         <meshStandardMaterial color={"yellow"} />
-      </mesh> */}
+      </mesh>
 
       <Suspense fallback={null}>
         <Pokemon3D />
