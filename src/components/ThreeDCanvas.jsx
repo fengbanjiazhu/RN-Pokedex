@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
+
 // import KnotGeo from "./KnotGeo";
 import Pokemon3D from "./Pokemon3D";
 
@@ -13,7 +14,6 @@ function ThreeDCanvas() {
         <coneGeometry />
         <meshStandardMaterial color={"yellow"} />
       </mesh>
-
       <Suspense fallback={null}>
         <Pokemon3D />
       </Suspense>
